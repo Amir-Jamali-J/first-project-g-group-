@@ -1,0 +1,41 @@
+
+.minimalist-collapse { padding-left: 0; }
+
+/* minimalist-collapse.css */
+
+.m-actived,
+.m-result.shadow-effect:hover,
+.active.shadow-effect {
+
+  z-index: 2;
+}
+
+.m-result 
+{
+    text-align:right;
+    direction:rtl;
+  border-radius: 8px;
+    background-color: #FCFCFC;
+    border: 1px solid #EEEEEE;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 130ms ease-in-out;
+  -moz-transition: all 130ms ease-in-out;
+  -ms-transition: all 130ms ease-in-out;
+  -o-transition: all 130ms ease-in-out;
+  transition: all 130ms ease-in-out;
+}
+
+.active.content-focus { margin: 12px 0; }
+ [data-collapse=m-collapse] {
+ cursor: pointer;
+ padding: 10px;
+}
+
+.m-collapse {
+  display: none;
+  padding: 10px;
+
+}

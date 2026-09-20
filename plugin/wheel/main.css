@@ -1,0 +1,173 @@
+
+.the_wheel {
+    padding: 80px 0px;
+    background-image: url(./wheel_back.png);
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align:center
+}
+.clickable {
+    display: block !important;
+    margin: 0px auto;
+}
+
+
+.unclickable
+{
+   display:none !important
+}
+
+.hidden {
+    display: none !important
+}
+
+.show {
+    display: block !important;
+    margin: 0px auto;
+}
+
+
+
+/*check out*/
+.checkout-form {
+    display: inline-block;
+    padding: 40px 30px;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 25px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.checkout-form {
+    padding: 30px 20px 10px;
+}
+
+.checkout-wrapp .row-col {
+    display: inline-block;
+    float: right;
+}
+
+.checkout-wrapp .row-col-1 {
+    width: 57.264957%;
+    padding-left: 15px;
+}
+
+.checkout-wrapp .row-col-2 {
+    width: 42.735043%;
+    padding-left: 135px;
+}
+
+
+.end-checkout {
+    text-align: center;
+    padding: 50px 30px;
+    margin-bottom: 0;
+}
+
+    .end-checkout .icon {
+        display: inline-block;
+        width: 98px;
+        height: 98px;
+        border: 3px solid #555555;
+        border-radius: 50%;
+        line-height: 110px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+        .end-checkout .icon::before {
+            content: url("../images/icon-checkout.png");
+        }
+
+    .end-checkout .title-checkend {
+        font-size: 18px;
+        color: #222222;
+    }
+
+    .end-checkout .sub-title {
+        font-size: 14px;
+        color: #555555;
+        margin: 0 auto 40px;
+        max-width: 570px;
+    }
+
+.checkout-form.success {
+    background-color: rgba(32, 154, 45, 0.30);
+    margin-top: 25px;
+}
+
+.checkout-form.error {
+    background-color: rgba(184, 65, 57, 0.10);
+    margin-top: 25px;
+}
+
+.end-checkout .icon.error::before {
+    content: url("../images/icon-error.png");
+}
+
+
+
+@media (max-width: 580px) {
+    .the_wheel {
+        padding: 65px 0px;
+    }
+
+    canvas {
+
+        width:75%
+ 
+    }
+
+}
+
+@media (max-width: 420px) {
+    .the_wheel {
+        padding: 65px 0px;
+    }
+
+    canvas {
+ 
+       
+    
+    }
+
+}
+@media (max-width: 400px) {
+    .the_wheel {
+        padding: 60px 0px;
+    }
+
+    canvas {
+    }
+}
+
+@media (max-width: 380px) {
+    .the_wheel {
+        padding: 55px 0px;
+    }
+
+    canvas {
+    }
+}
+
+@media (max-width: 340px) {
+    .the_wheel {
+        padding: 50px 0px;
+    }
+
+
+}
+
+@media (max-width: 290px) {
+    .the_wheel {
+        padding: 44px 0px;
+    }
+}
+
+
+@media (max-width: 240px) {
+    .the_wheel {
+        padding: 40px 0px;
+    }
+}

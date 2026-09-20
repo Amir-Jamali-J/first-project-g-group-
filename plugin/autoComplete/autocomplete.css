@@ -1,0 +1,130 @@
+﻿
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+.ui-autocomplete {
+    position: absolute ;
+    cursor: default;
+    z-index: 10000 !important;
+}
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    outline: none;
+    max-height: 250px;
+    overflow-y: scroll;
+    direction: rtl;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.ui-menu .ui-menu { margin-top: -3px; position: absolute !important; }
+
+
+    .ui-menu .ui-menu-item {
+        margin: 0;
+        padding: 5px 5px !important;
+        width: 100%;
+        border: 1px solid #fff;
+        display: flex;
+        border-bottom:1px solid #ededed;
+
+    }
+
+.ui-menu .ui-menu-divider { margin: 5px -2px 5px -2px; height: 0; font-size: 0; line-height: 0; border-width: 1px 0 0 0; }
+
+.ui-autocomplete-category {
+    border: 1px solid #fff;
+    padding: 7px 10px !important;
+
+    background-color: #333;
+    color: #fff;
+    font-weight: 500 !important;
+    font-family: vazir;
+    border-radius: 4px !important;
+}
+
+
+
+.ui-menu .ui-menu-item a, .ui-menu .ui-menu-item a.ui-state-focus, .ui-menu .ui-menu-item a.ui-state-active {
+    text-decoration: none;
+    display: block;
+    padding: 5px 5px !important;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: right;
+    font-family: vazir;
+    font-size: 13px;
+    border-radius: 4px !important;
+}
+
+
+
+.ui-menu .ui-state-disabled { font-weight: normal; margin: .4em 0 .2em; line-height: 1.5; }
+.ui-menu .ui-state-disabled a { cursor: default; }
+
+
+
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+/* Fades and background-images don't work well together in IE6, drop the image */
+* html .ui-tooltip {
+	background-image: none;
+}
+body .ui-tooltip { border-width: 2px; }
+
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+
+
+    font-weight: 400;
+    color: #2b2b2b;
+}
+
+
+.ui-autocomplete-category.ui-state-focus, .ui-autocomplete-category.ui-widget-content .ui-state-focus {
+    border: 1px solid #fff;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500 !important;
+    border-radius: 4px !important;
+    font-family: vazir;
+}
+
+
+.ui-menu-item img
+{
+    width:50px !important;
+    height:auto;
+    margin-left:10px;
+    border-radius:5px;
+    border:1px solid #cccccc
+}
+
+
+.ui-widget-content a {
+    /*float:right;*/
+}
+
+

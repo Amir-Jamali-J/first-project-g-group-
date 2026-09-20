@@ -1,0 +1,40 @@
+﻿@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت‌ها را برعهده دارد */
+body {
+	font-family: PeydaWebFaNum !important;
+	direction: rtl;
+	background-color: #cdcdcd;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: PeydaWebFaNum !important;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #aaa;
+}
+
+.box400 p, .box700 p{
+	font-size: 20px;
+	margin: 0;
+}
+
+.box400, .box400 h1, .box700, .box700 h1{
+  	margin: 30px 0 0 0;
+	font-size: 25px;
+}
+
+
+.box400, .box400 h1{
+	font-weight:400;
+}
+
+
+.box700, .box700 h1{
+	font-weight:700;
+}
