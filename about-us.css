@@ -280,6 +280,28 @@
     margin: 0;
 }
 
+.long-desc {
+
+}
+@media (max-width: 767px) {
+  .long-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;          /* حداکثر ۳ خط */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;                /* نشان می‌دهد قابل کلیک است */
+    transition: all 0.3s ease;
+  }
+
+  /* وقتی کلاس expanded اضافه شود، متن کامل می‌شود */
+  .long-desc.expanded {
+    -webkit-line-clamp: unset;      /* محدودیت خط برداشته می‌شود */
+    display: block;
+    overflow: visible;
+  }
+}
+
 
 @media (max-width: 768px) {
     .about-intro-section {

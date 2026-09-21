@@ -369,6 +369,8 @@ blockquote, figcaption, small, strong, em, b,
     font-family: var(--font-base);
 }
 
+
+
 /* responsive */
 @media (max-width: 992px) {
     .intro-section {

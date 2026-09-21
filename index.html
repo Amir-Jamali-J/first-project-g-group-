@@ -469,7 +469,7 @@
                     <div class="stat-block">
                         <span class="stat-number" data-count="18">0</span><span class="stat-plus">+</span>
                         <h3 class="stat-title">Years of Experience</h3>
-                        <p class="stat-desc">
+                        <p class="stat-desc long-desc">
                             Bringing years of industry expertise in construction, engineering, and project management, delivering innovative solutions across diverse sectors.
                         </p>
                     </div>
@@ -477,7 +477,7 @@
                     <div class="stat-block">
                         <span class="stat-number" data-count="120">0</span><span class="stat-plus">+</span>
                         <h3 class="stat-title">Projects Delivered</h3>
-                        <p class="stat-desc">
+                        <p class="stat-desc long-desc">
                             Successfully delivering residential, commercial, and infrastructure projects with a commitment to quality, safety, and client satisfaction.
                         </p>
                     </div>
@@ -485,7 +485,7 @@
                     <div class="stat-block">
                         <span class="stat-number" data-count="175">0</span><span class="stat-plus">+</span>
                         <h3 class="stat-title">Skilled Professionals</h3>
-                        <p class="stat-desc">
+                        <p class="stat-desc long-desc">
                             A dedicated team of engineers, architects, and project managers working together to deliver excellence at every stage of construction.
                         </p>
                     </div>
@@ -493,7 +493,7 @@
                     <div class="stat-block">
                         <span class="stat-number" data-count="95">0</span><span class="stat-plus">%</span>
                         <h3 class="stat-title">Client Satisfaction</h3>
-                        <p class="stat-desc">
+                        <p class="stat-desc long-desc">
                             Our commitment to transparency, on-time delivery, and superior craftsmanship has earned lasting trust from clients across the region.
                         </p>
                     </div>
@@ -635,7 +635,7 @@
                     <div class="project-content">
                         <span class="project-label">Commercial Development</span>
                         <h3 class="project-heading">A Landmark Office Tower, Delivered On Time</h3>
-                        <p class="project-text">Right in the heart of the city, this office tower required deep-foundation engineering and tight coordination on a constrained urban site. Our in-house engineering and project management teams worked side by side from groundbreaking to handover, keeping the schedule intact even as the scope grew more complex.</p>
+                        <p class="project-text long-desc">Right in the heart of the city, this office tower required deep-foundation engineering and tight coordination on a constrained urban site. Our in-house engineering and project management teams worked side by side from groundbreaking to handover, keeping the schedule intact even as the scope grew more complex.</p>
                         <div class="project-stat-box">
                             <span class="project-stat-number">20 Floors</span>
                             <span class="project-stat-label">Completed in 22 Months</span>
@@ -651,7 +651,7 @@
                     <div class="project-content">
                         <span class="project-label">Residential Development</span>
                         <h3 class="project-heading">240 Homes Built Around Real Life</h3>
-                        <p class="project-text">Spread across four residential towers, this development was designed for how people actually live — natural light, shared green space, and structural safety standards that go beyond code minimums. Every unit was handed over inspected, tested, and ready to move into.</p>
+                        <p class="project-text long-desc">Spread across four residential towers, this development was designed for how people actually live — natural light, shared green space, and structural safety standards that go beyond code minimums. Every unit was handed over inspected, tested, and ready to move into.</p>
                         <div class="project-stat-box">
                             <span class="project-stat-number">240 Units</span>
                             <span class="project-stat-label">Delivered Across 4 Towers</span>
@@ -667,7 +667,7 @@
                     <div class="project-content">
                         <span class="project-label">Industrial &amp; Infrastructure</span>
                         <h3 class="project-heading">A 45,000 m² Facility Built for Decades of Use</h3>
-                        <p class="project-text">This large-scale logistics and industrial facility called for heavy structural engineering, strict safety compliance, and a fast-tracked construction schedule. We delivered a fully operational facility built to withstand decades of continuous industrial use.</p>
+                        <p class="project-text long-desc">This large-scale logistics and industrial facility called for heavy structural engineering, strict safety compliance, and a fast-tracked construction schedule. We delivered a fully operational facility built to withstand decades of continuous industrial use.</p>
                         <div class="project-stat-box">
                             <span class="project-stat-number">45,000 m²</span>
                             <span class="project-stat-label">Industrial Facility Completed</span>
@@ -685,7 +685,7 @@
                     <div class="project-content">
                         <span class="project-label">Commercial Construction</span>
                         <h3 class="project-heading">Modern Business Spaces Built to Perform</h3>
-                        <p class="project-text">Designed and constructed with a focus on durability, functionality, and architectural excellence, this commercial development provides high-quality workspaces that meet today's business demands while ensuring long-term value and structural integrity.</p>
+                        <p class="project-text long-desc">Designed and constructed with a focus on durability, functionality, and architectural excellence, this commercial development provides high-quality workspaces that meet today's business demands while ensuring long-term value and structural integrity.</p>
                         <div class="project-stat-box">
                             <span class="project-stat-number">18,500 m²</span>
                             <span class="project-stat-label">Completed Commercial Area</span>
@@ -1752,6 +1752,19 @@
                 });
             });
         </script>
+       
+       <script>
+        document.addEventListener('DOMContentLoaded', function () {
+  const paragraphs = document.querySelectorAll('.long-desc');
 
+  paragraphs.forEach(function (p) {
+    p.addEventListener('click', function () {
+      if (window.innerWidth < 768) {
+        p.classList.toggle('expanded');
+      }
+    });
+  });
+});
+       </script>
 </body>
 </html>

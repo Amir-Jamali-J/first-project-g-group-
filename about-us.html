@@ -324,15 +324,15 @@
                     <h1 class="intro-title">Who We Are & What We Do</h1>
                     <p class="intro-description">Get to know our company, our core values, and our vision for the future.</p>
                     <div class="intro-paragraph">
-                        <p>
+                        <p class="long-desc">
                             At G Group, we are dedicated to setting new benchmarks in structural engineering, modern construction, and high-performance building solutions. Built on a foundation of engineering integrity, technical rigor, and sustainable innovation, we partner with developers, commercial enterprises, and institutions to turn ambitious concepts into enduring structures.
                         </p>
                         <p>
-                            From advanced seismic retrofitting and comprehensive architectural oversight to premium materials manufacturing, our multidisciplinary team brings deep domain expertise to every phase of the project lifecycle.
+                            From advanced.
                         </p>
                     </div>
                     <p class="intro-second-p">
-                        With a strong commitment to quality and innovation, we continually strive to deliver exceptional services and products tailored to meet the evolving needs of our clients.
+                        With a strong commitment to quality and innovation.
            
                     </p>
                 </div>
@@ -351,11 +351,11 @@
                         <div class="project-content">
                             <span class="project-label">Our Legacy</span>
                             <h2 class="project-heading">Over a Decade of Specialized Experience</h2>
-                            <p class="project-text">
+                            <p class="project-text long-desc">
                                 For years, our agro-industry company has operated as a specialized reference center for importing, supplying, and distributing day-old industrial and meat turkeys nationwide. 
                             </p>
-                            <p class="project-text">
-                                Our continuous presence in large farms and collaboration with professional breeders across different climates result in the delivery of the world's top heavyweight strains (such as ConverterNOVO), backed by strict biosecurity and a highly experienced engineering team.
+                            <p class="project-text long-desc">
+                                Our continuous presence in large farms and collaboration with professional  backed by strict biosecurity and a highly experienced engineering team.
                             </p>
                         </div>
                     </div>
@@ -367,10 +367,10 @@
                         <div class="project-content">
                             <span class="project-label">Core Values</span>
                             <h2 class="project-heading">More Than Just a Supplier; We Are Your Scientific Partner</h2>
-                            <p class="project-text">
+                            <p class="project-text long-desc">
                                 From the day the chicks hatch until processing day, we maintain a unified responsibility. We offer simultaneous biological quality control, engineered diet planning, and continuous veterinary supervision.
                             </p>
-                            <p class="project-text">
+                            <p class="project-text long-desc">
                                 The high efficiency and extraordinary weight gain of the flocks we have supplied to farms across the country over the years is our greatest asset of trust, because our success depends entirely on the profitability of your farms.
                             </p>
                         </div>
@@ -1913,6 +1913,23 @@
                 });
             });
         </script>
+
+
+     <!-- js 3 noghte long description ha -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+  const paragraphs = document.querySelectorAll('.long-desc');
+
+  paragraphs.forEach(function (p) {
+    p.addEventListener('click', function () {
+      if (window.innerWidth < 768) {
+        p.classList.toggle('expanded');
+      }
+    });
+  });
+});
+     </script>
+
 
 </body>
 </html>
